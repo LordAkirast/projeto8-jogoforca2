@@ -4,15 +4,15 @@ import './index.css';
 import { useState } from 'react';
 import Letters from './Letras';
 import App from './App';
-import Jogo from './Jogo';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+function Jogo(props) {
 
-root.render(
+    return (
+        
+                <App />
+          
+    )
+}
 
-  <Jogo />
-
-);
-
-
+export default Jogo;
