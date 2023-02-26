@@ -43,7 +43,7 @@ const Letters = (props) => {
             onMouseOut={handleMouseOut}
             onClick={() => {
               if (selectedLetters.includes(letter)) {
-                alert(`${letter} já foi escolhida`)
+  
               } else {
 
                 handleLetterClick(letter)
@@ -58,6 +58,9 @@ const Letters = (props) => {
       <div className='selected-letters'>
         Selected letters: {selectedLetters.join(', ')}
       </div>
+      <div className='right_word'>
+        Letras Corretas: 
+      </div>
     </div>
   )
 }
@@ -66,5 +69,6 @@ export default Letters;
 
 
 ///o que fazer?
-//agora ao clicar em uma letra que está certa aparece que inclui ela. Tem que fazer a letra certa aparecer na tela. e tambem, fazer com que a forca
+//agora ao clicar em uma letra que está certa aparece que inclui ela. 
+///Tem que fazer a letra certa aparecer na tela. e tambem, fazer com que a forca
 //ganhe imagens diferentes ao errar
