@@ -41,6 +41,15 @@ function App(props) {
     const [reset, setreset] = useState(0)
 
     return (
+        <>
+        <div className='neon-popup'>
+  <button>Para o tutor!</button>
+  <p>Seguem abaixo os motivos pelos quais não obtive êxito neste projeto:<br/>
+  - Dificuldade com verificações com map.<br/>
+  - Dificuldade em entender props e variáveis estilo ChildToParent<br/>
+  - Dificuldade em aplicar a função disable no onclick em cada letra.<br/></p>
+</div>
+
         <div className='screen'>
             <div className='gameScreen'>
                 <div className='container'>
@@ -55,6 +64,7 @@ function App(props) {
             </div>
             <Letters choosenWord={choosenWord}/>
         </div>
+        </>
 
     )
 
@@ -72,6 +82,8 @@ function App(props) {
             window.location.reload();
         }
     }
+
+    function mistake() {}
 
 }
 
