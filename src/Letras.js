@@ -25,7 +25,7 @@ const Letters = (props) => {
   const handleLetterClick = (letter) => {
     if (choosenWord.includes(letter) === true) {
       setrightLetters([...rightLetters, letter])
-      alert('inclui')
+      alert(`Você acertou. A palavra tem ${choosenWord.length} letras.`)
     } else {
       setSelectedLetters([...selectedLetters, letter]);
     }
@@ -43,7 +43,7 @@ const Letters = (props) => {
             onMouseOut={handleMouseOut}
             onClick={() => {
               if (selectedLetters.includes(letter)) {
-  
+
               } else {
 
                 handleLetterClick(letter)
@@ -59,7 +59,8 @@ const Letters = (props) => {
         Selected letters: {selectedLetters.join(', ')}
       </div>
       <div className='right_word'>
-        Letras Corretas: 
+        <p>Letras Corretas: {rightLetters}</p>
+        <p>Palavra Correta:</p>
       </div>
     </div>
   )
